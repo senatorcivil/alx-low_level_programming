@@ -7,43 +7,26 @@
  */
 int main(void)
 {
-int x;
-int y;
-int z;
-int t = 0;
+	int x, y;
 
-while (t < 10)
-{
-	z = 0;
-	while (z < 10)
+	for (x = 0; x <= 98; x++)
 	{
-		y = 0;
-		while (y < 10)
+		for (y = x + 1; y <= 99; y++)
 		{
-			x = 0;
-			while (x < 10)
-			{
-				if (!(t == x && z == y))
-				{
-					putchar('0' + t);
-					putchar('0' + z);
-					putchar(' ');
-					putchar('0' + y);
-					putchar('0' + x);
-					if (!(t + z == 18 && y + x == 17 && y == 9))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
-				x++;
-			}
-			y++;
+			putchar((x / 10) + '0');
+			putchar((x % 10) + '0');
+			putchar(' ');
+			putchar((y / 10) + '0');
+			putchar((y % 10) + '0');
+
+			if (x == 98 && y == 99)
+				continue;
+			putchar(',');
+			putchar(' ');
 		}
-		z++;
 	}
-	t++;
-}
-putchar('\n');
-return (0);
+
+	putchar('\n');
+
+	return (0);
 }
