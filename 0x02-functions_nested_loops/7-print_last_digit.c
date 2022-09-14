@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main- :prints the last digit.
+ * main- :prints the last digit of numbers
  *
  * Return: always 0
  */
