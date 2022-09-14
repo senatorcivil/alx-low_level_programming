@@ -1,6 +1,4 @@
 #include <main.h>
-#include <stdio.h>
-#include <stdlib.h>
 /**
  * main - entry point
  * Description: prints _putchar, followed by a new line.
