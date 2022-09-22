@@ -1,28 +1,20 @@
 #include "main.h"
 /*
- * *_strcat - function that concatenates two srin
- * @dest: test code
- * @src: test code
+ * _strcat - concatenates two srings
+ * @dest: string to be joined
+ * @src: string to be concantenated upon
+ *
  * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
-	int x;
-	int y;
+	int index = 0, dest_len = 0;
 
-	x = 0;
+	while (dest[index++])
+		dest_len++;
 
-	while (dest[x] != 0)
-	{
-		x++;
-	}
-	y = 0;
+	for (index = 0; src[index]; index++)
+		dest[dest_len++] = src[index];
 
-	while (src[y] != 0)
-	{
-		dest[x] = src[y];
-		x++;
-		y++;
-	}
 	return (dest);
 }
