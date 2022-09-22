@@ -1,8 +1,8 @@
 #include "main.h"
-/*
- * _strcat - concatenates two srings
- * @dest: string to be joined
- * @src: string to be concantenated upon
+/**
+ * _strcat - concatenates two strings
+ * @dest: input parameter string
+ * @src: input parameter string
  *
  * Return: dest
  */
