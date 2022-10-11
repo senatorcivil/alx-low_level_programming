@@ -1,11 +1,11 @@
-ifndef STRUCTS
+#ifndef STRUCTS
 #define STRUCTS
 /**
  * struct dog - description for a pet
  * @name: pet name
  * @age: pet age
  * @owner: owner
- * Return: 0
+ * Return: STRUCTS
  */
 typedef struct dog
 {
